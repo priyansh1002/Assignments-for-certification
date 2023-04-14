@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position :fixed;
+    top: 0;
+    left: 0;
+    width : 100%;
+    padding: 20px 10px;
+    background-color: rgba(217, 25, 25, 0.73);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.628);
+    border-radius: 5px;
+}
+.logo{
+    display: flex;
+    align-items: normal;
+    justify-content:center ;
+}
+.navigation a {
+     position: relative;
+     font-size: medium;
+     color: white;
+     text-decoration: none;
+     font-weight: bolder;
+     margin: 0px 30px;
+}
+main{
+    background-color: blue;
+    margin: 77px 0 0 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.new1{
+    width: 100vw;
+    height: 80vh;
+}
+@keyframes waves {
+    0%{
+        margin-left: 1600px;
+    }
+
+    100%{
+        margin-left: -700px; /* end after exactly one image width */
+    }
+}
+
+.waves {
+    /* position: absolute; */
+    top: 100px;
+    left: 200px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.waves .wave{
+    margin-left: 0;
+
+    width: 100%; 
+    height: 50vh;
+    /* background-image: url(http://quarter.cs.stir.ac.uk/~rsm/images/flow.png); */
+    background-repeat: round;
+}
+
+.waves .wave.bottom-wave{
+    /* -moz-animation:waves 5s infinite linear; */
+    -webkit-animation:waves 10s infinite linear;
+    animation:waves 3s linear 3s infinite alternate slidein;
+}
+
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+footer{
+    background-color: black;
+    color: antiquewhite;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
